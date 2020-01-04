@@ -2,4 +2,18 @@
 package java.lang {
     abstract class ClassLoader
 }
+package sun.misc {
+    class AppClassLoader
+    class ExtClassLoader
+}
+package java.net {
+    class URLClassLoader
+}
+package java.security {
+    class SecurityClassLoader
+}
+class SecurityClassLoader extends ClassLoader
+class URLClassLoader extends SecurityClassLoader
+class AppClassLoader extends URLClassLoader
+class ExtClassLoader extends URLClassLoader
 @enduml
