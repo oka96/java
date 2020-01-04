@@ -17,8 +17,12 @@ class URLClassLoader extends SecurityClassLoader
 class AppClassLoader extends URLClassLoader
 class ExtClassLoader extends URLClassLoader
 
+
 class BootstrapClassLoader
-note right
+note bottom
     written by C/C++ language
 end note
+
+' align layout purpose
+BootstrapClassLoader -[hidden]down- ExtClassLoader 
 @enduml
