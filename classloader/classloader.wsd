@@ -1,0 +1,5 @@
+@startuml classLoader
+package java.lang {
+    abstract class ClassLoader
+}
+@enduml
