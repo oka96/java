@@ -16,4 +16,9 @@ class SecurityClassLoader extends ClassLoader
 class URLClassLoader extends SecurityClassLoader
 class AppClassLoader extends URLClassLoader
 class ExtClassLoader extends URLClassLoader
+
+class BootstrapClassLoader
+note right
+    written by C/C++ language
+end note
 @enduml
